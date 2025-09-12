@@ -1,0 +1,30 @@
+# Node.js
+/node_modules
+/npm-debug.log
+/yarn-debug.log
+/yarn-error.log
+
+# Environment Files
+/.env
+
+# IDE / Text Editor Files
+.vscode
+.idea
+*.sublime-workspace
+*.sublime-project
+
+# Build & Deploy
+/build
+/dist
+/public/*    # if using static file deploy
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.log.*
+
+# npm packages from the frontend
+/client/node_modules

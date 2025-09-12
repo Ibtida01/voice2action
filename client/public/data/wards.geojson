@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "W-01", "name": "Ward 01 (Sample)" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.38,23.80],[90.40,23.80],[90.40,23.82],[90.38,23.82],[90.38,23.80]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "W-02", "name": "Ward 02 (Sample)" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.40,23.80],[90.42,23.80],[90.42,23.82],[90.40,23.82],[90.40,23.80]]]
+      }
+    }
+  ]
+}
