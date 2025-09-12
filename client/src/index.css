@@ -1,0 +1,6 @@
+/* client/src/index.css */
+@import 'leaflet/dist/leaflet.css';
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; background: #f8fafc; color: #111827; }
+button, input, textarea, select { font: inherit; }
