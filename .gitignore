@@ -6,6 +6,8 @@
 
 # Environment Files
 /.env
+/server/.env
+/client/.env
 
 # IDE / Text Editor Files
 .vscode
