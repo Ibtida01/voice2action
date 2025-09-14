@@ -70,9 +70,9 @@ function requireRole(...roles) {
 mongoose
   .connect(MONGO_URI)
   .then(() => {
-    console.log('✅ MongoDB connected');
+    console.log('MongoDB connected');
     app.listen(PORT, () => {
-      console.log(`🚀 Voice2Action API running http://localhost:${PORT}`);
+      console.log(` Voice2Action API running http://localhost:${PORT}`);
     });
   })
   .catch(err => {
@@ -472,7 +472,7 @@ app.get('/api/orgs', async (req, res) => {
 });
 
 // Per-organization metrics (scorecard)
-app.get('/api/org/:code/metrics', async (req, res) => {
+app.get('/api/orgs/:code/metrics', async (req, res) => {
   const code = req.params.code;
 
   const total = await Issue.countDocuments({ orgCode: code });

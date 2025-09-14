@@ -18,7 +18,9 @@ import {
   analyticsSeries,
   wardStats,
   getGeoPoints,
-  uploadFile
+  uploadFile,
+  getOrgs,
+  getOrgMetrics
 } from './api';
 
 import { Line, Doughnut, Bar } from 'react-chartjs-2';
@@ -107,11 +109,32 @@ function AnalyticsView() {
     <div style={styles.page}>
       <div style={styles.card}>
         <div style={{ fontWeight: 'bold', marginBottom: 8 }}>Issues per day (last 30 days)</div>
-        <Line data={{ labels, datasets: [{ label: 'Issues', data: counts }] }} />
+        <Line data={{
+          labels,
+          datasets: [{
+            label: 'Issues',
+            data: counts,
+            borderColor: '#3b82f6',
+            backgroundColor: 'rgba(59, 130, 246, 0.1)',
+            tension: 0.4
+          }]
+        }} />
       </div>
       <div style={styles.card}>
         <div style={{ fontWeight: 'bold', marginBottom: 8 }}>By category</div>
-        <Doughnut data={{ labels: catLabels, datasets: [{ data: catCounts }] }} />
+        <Doughnut data={{
+          labels: catLabels,
+          datasets: [{
+            data: catCounts,
+            backgroundColor: [
+              '#ef4444', '#f97316', '#eab308', '#22c55e', '#3b82f6',
+              '#8b5cf6', '#ec4899', '#06b6d4', '#84cc16', '#f59e0b',
+              '#64748b', '#dc2626', '#ea580c', '#ca8a04', '#16a34a'
+            ],
+            borderWidth: 2,
+            borderColor: '#ffffff'
+          }]
+        }} />
       </div>
     </div>
   );
@@ -233,8 +256,20 @@ function BudgetSimulator() {
         <div style={{ fontWeight: 'bold', marginBottom: 8 }}>Planned vs Needs (normalized to total)</div>
         <Bar data={{
           labels, datasets: [
-            { label: 'Planned', data: planned },
-            { label: 'Needs (scaled)', data: needed }
+            {
+              label: 'Planned',
+              data: planned,
+              backgroundColor: '#3b82f6',
+              borderColor: '#1d4ed8',
+              borderWidth: 1
+            },
+            {
+              label: 'Needs (scaled)',
+              data: needed,
+              backgroundColor: '#ef4444',
+              borderColor: '#dc2626',
+              borderWidth: 1
+            }
           ]
         }} />
       </div>
@@ -598,13 +633,31 @@ function Scorecards() {
   const [orgs, setOrgs] = useState([]);
   const [sel, setSel] = useState('');
   const [m, setM] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     (async () => {
-      const r = await getOrgs();
-      if (r.ok) {
-        setOrgs(r.orgs || []);
-        if ((r.orgs || []).length) setSel(r.orgs[0].code);
+      try {
+        setLoading(true);
+        setError(null);
+        const r = await getOrgs();
+        console.log('getOrgs response:', r); // Debug log
+
+        if (r.ok && r.orgs) {
+          setOrgs(r.orgs);
+          if (r.orgs.length > 0) {
+            setSel(r.orgs[0].code);
+          }
+        } else {
+          setError('Failed to load organizations');
+          console.error('getOrgs failed:', r);
+        }
+      } catch (err) {
+        setError('Error loading organizations');
+        console.error('getOrgs error:', err);
+      } finally {
+        setLoading(false);
       }
     })();
   }, []);
@@ -612,26 +665,53 @@ function Scorecards() {
   useEffect(() => {
     if (!sel) return;
     (async () => {
-      const r = await getOrgMetrics(sel);
-      if (r.ok) setM(r);
+      try {
+        const r = await getOrgMetrics(sel);
+        console.log('getOrgMetrics response:', r); // Debug log
+        if (r.ok) {
+          setM(r);
+        } else {
+          console.error('getOrgMetrics failed:', r);
+        }
+      } catch (err) {
+        console.error('getOrgMetrics error:', err);
+      }
     })();
   }, [sel]);
 
   return (
     <div style={styles.page}>
       <div style={styles.card}>
-        <div style={{ display:'flex', gap:8, alignItems:'center' }}>
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
           <div style={{ fontWeight: 700 }}>Select LGI / Ward</div>
-          <select style={styles.select} value={sel} onChange={e => setSel(e.target.value)}>
-            {orgs.map(o => <option key={o.code} value={o.code}>{o.name || o.code}</option>)}
-          </select>
+
+          {loading ? (
+            <div>Loading organizations...</div>
+          ) : error ? (
+            <div style={{ color: 'red' }}>{error}</div>
+          ) : orgs.length === 0 ? (
+            <div>No organizations found</div>
+          ) : (
+            <select
+              style={{ ...styles.select, minWidth: '200px' }}
+              value={sel}
+              onChange={e => setSel(e.target.value)}
+            >
+              <option value="">Select an organization...</option>
+              {orgs.map(o => (
+                <option key={o.code} value={o.code}>
+                  {o.name || o.code}
+                </option>
+              ))}
+            </select>
+          )}
         </div>
       </div>
 
       {m && (
         <div style={styles.card}>
           <div style={{ fontWeight: 'bold', marginBottom: 8 }}>Scorecard — {m.orgCode}</div>
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(5,1fr)', gap:8 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5,1fr)', gap: 8 }}>
             <div>Total: <b>{m.total}</b></div>
             <div>Resolved: <b>{m.resolved}</b></div>
             <div>Resolve Rate: <b>{m.resolve_rate}%</b></div>
@@ -646,7 +726,16 @@ function Scorecards() {
           <div style={{ fontWeight: 'bold', marginBottom: 8 }}>Categories in {m.orgCode}</div>
           <Doughnut data={{
             labels: (m.categories || []).map(c => c._id || 'Uncategorized'),
-            datasets: [{ data: (m.categories || []).map(c => c.count) }]
+            datasets: [{
+              data: (m.categories || []).map(c => c.count),
+              backgroundColor: [
+                '#ef4444', '#f97316', '#eab308', '#22c55e', '#3b82f6',
+                '#8b5cf6', '#ec4899', '#06b6d4', '#84cc16', '#f59e0b',
+                '#64748b', '#dc2626', '#ea580c', '#ca8a04', '#16a34a'
+              ],
+              borderWidth: 2,
+              borderColor: '#ffffff'
+            }]
           }} />
         </div>
       )}

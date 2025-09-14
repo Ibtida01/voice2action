@@ -1,20 +1,1043 @@
 {
   "type": "FeatureCollection",
+  "metadata": {
+    "title": "Dhaka City Corporation Wards",
+    "total_wards": 129,
+    "dncc_wards": 54,
+    "dscc_wards": 75,
+    "note": "Sample ward boundaries for demonstration"
+  },
   "features": [
     {
       "type": "Feature",
-      "properties": { "wardCode": "W-01", "name": "Ward 01 (Sample)" },
+      "properties": { "wardCode": "DNCC-01", "name": "Ward 01 (Uttara Sector 1)", "corporation": "DNCC", "zone": 1 },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[[90.38,23.80],[90.40,23.80],[90.40,23.82],[90.38,23.82],[90.38,23.80]]]
+        "coordinates": [[[90.38,23.87],[90.40,23.87],[90.40,23.89],[90.38,23.89],[90.38,23.87]]]
       }
     },
     {
       "type": "Feature",
-      "properties": { "wardCode": "W-02", "name": "Ward 02 (Sample)" },
+      "properties": { "wardCode": "DNCC-02", "name": "Ward 02 (Uttara Sector 3)", "corporation": "DNCC", "zone": 1 },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[[90.40,23.80],[90.42,23.80],[90.42,23.82],[90.40,23.82],[90.40,23.80]]]
+        "coordinates": [[[90.40,23.87],[90.42,23.87],[90.42,23.89],[90.40,23.89],[90.40,23.87]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-03", "name": "Ward 03 (Uttara Sector 7)", "corporation": "DNCC", "zone": 1 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.42,23.87],[90.44,23.87],[90.44,23.89],[90.42,23.89],[90.42,23.87]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-04", "name": "Ward 04 (Uttara Sector 10)", "corporation": "DNCC", "zone": 1 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.44,23.87],[90.46,23.87],[90.46,23.89],[90.44,23.89],[90.44,23.87]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-05", "name": "Ward 05 (Uttara Sector 12)", "corporation": "DNCC", "zone": 1 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.38,23.85],[90.40,23.85],[90.40,23.87],[90.38,23.87],[90.38,23.85]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-06", "name": "Ward 06 (Turag)", "corporation": "DNCC", "zone": 2 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.36,23.85],[90.38,23.85],[90.38,23.87],[90.36,23.87],[90.36,23.85]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-07", "name": "Ward 07 (Dakshinkhan)", "corporation": "DNCC", "zone": 2 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.40,23.85],[90.42,23.85],[90.42,23.87],[90.40,23.87],[90.40,23.85]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-08", "name": "Ward 08 (Uttarkhan)", "corporation": "DNCC", "zone": 2 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.42,23.85],[90.44,23.85],[90.44,23.87],[90.42,23.87],[90.42,23.85]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-09", "name": "Ward 09 (Airport)", "corporation": "DNCC", "zone": 2 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.44,23.85],[90.46,23.85],[90.46,23.87],[90.44,23.87],[90.44,23.85]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-10", "name": "Ward 10 (Khilkhet)", "corporation": "DNCC", "zone": 3 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.42,23.83],[90.44,23.83],[90.44,23.85],[90.42,23.85],[90.42,23.83]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-11", "name": "Ward 11 (Vatara)", "corporation": "DNCC", "zone": 3 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.44,23.83],[90.46,23.83],[90.46,23.85],[90.44,23.85],[90.44,23.83]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-12", "name": "Ward 12 (Badda)", "corporation": "DNCC", "zone": 3 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.42,23.81],[90.44,23.81],[90.44,23.83],[90.42,23.83],[90.42,23.81]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-13", "name": "Ward 13 (Rampura)", "corporation": "DNCC", "zone": 3 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.44,23.81],[90.46,23.81],[90.46,23.83],[90.44,23.83],[90.44,23.81]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-14", "name": "Ward 14 (Banasree)", "corporation": "DNCC", "zone": 4 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.44,23.79],[90.46,23.79],[90.46,23.81],[90.44,23.81],[90.44,23.79]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-15", "name": "Ward 15 (Baridhara)", "corporation": "DNCC", "zone": 4 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.42,23.79],[90.44,23.79],[90.44,23.81],[90.42,23.81],[90.42,23.79]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-16", "name": "Ward 16 (Gulshan 1)", "corporation": "DNCC", "zone": 4 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.40,23.79],[90.42,23.79],[90.42,23.81],[90.40,23.81],[90.40,23.79]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-17", "name": "Ward 17 (Gulshan 2)", "corporation": "DNCC", "zone": 4 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.41,23.77],[90.43,23.77],[90.43,23.79],[90.41,23.79],[90.41,23.77]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-18", "name": "Ward 18 (Banani)", "corporation": "DNCC", "zone": 4 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.39,23.77],[90.41,23.77],[90.41,23.79],[90.39,23.79],[90.39,23.77]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-19", "name": "Ward 19 (Baridhara DOHS)", "corporation": "DNCC", "zone": 5 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.43,23.77],[90.45,23.77],[90.45,23.79],[90.43,23.79],[90.43,23.77]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-20", "name": "Ward 20 (Cantonment)", "corporation": "DNCC", "zone": 5 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.37,23.77],[90.39,23.77],[90.39,23.79],[90.37,23.79],[90.37,23.77]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-21", "name": "Ward 21 (Tejgaon)", "corporation": "DNCC", "zone": 5 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.39,23.75],[90.41,23.75],[90.41,23.77],[90.39,23.77],[90.39,23.75]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-22", "name": "Ward 22 (Karwan Bazar)", "corporation": "DNCC", "zone": 5 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.37,23.75],[90.39,23.75],[90.39,23.77],[90.37,23.77],[90.37,23.75]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-23", "name": "Ward 23 (Mohakhali)", "corporation": "DNCC", "zone": 6 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.41,23.75],[90.43,23.75],[90.43,23.77],[90.41,23.77],[90.41,23.75]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-24", "name": "Ward 24 (Wireless)", "corporation": "DNCC", "zone": 6 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.39,23.73],[90.41,23.73],[90.41,23.75],[90.39,23.75],[90.39,23.73]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-25", "name": "Ward 25 (Panthapath)", "corporation": "DNCC", "zone": 6 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.37,23.73],[90.39,23.73],[90.39,23.75],[90.37,23.75],[90.37,23.73]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-26", "name": "Ward 26 (Kakrail)", "corporation": "DNCC", "zone": 6 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.41,23.73],[90.43,23.73],[90.43,23.75],[90.41,23.75],[90.41,23.73]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-27", "name": "Ward 27 (Malibagh)", "corporation": "DNCC", "zone": 7 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.43,23.73],[90.45,23.73],[90.45,23.75],[90.43,23.75],[90.43,23.73]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-28", "name": "Ward 28 (Khilgaon)", "corporation": "DNCC", "zone": 7 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.43,23.71],[90.45,23.71],[90.45,23.73],[90.43,23.73],[90.43,23.71]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-29", "name": "Ward 29 (Sabujbagh)", "corporation": "DNCC", "zone": 7 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.45,23.71],[90.47,23.71],[90.47,23.73],[90.45,23.73],[90.45,23.71]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-30", "name": "Ward 30 (Demra)", "corporation": "DNCC", "zone": 7 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.45,23.69],[90.47,23.69],[90.47,23.71],[90.45,23.71],[90.45,23.69]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-31", "name": "Ward 31 (Mirpur 1)", "corporation": "DNCC", "zone": 8 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.35,23.83],[90.37,23.83],[90.37,23.85],[90.35,23.85],[90.35,23.83]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-32", "name": "Ward 32 (Mirpur 2)", "corporation": "DNCC", "zone": 8 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.33,23.83],[90.35,23.83],[90.35,23.85],[90.33,23.85],[90.33,23.83]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-33", "name": "Ward 33 (Mirpur 6)", "corporation": "DNCC", "zone": 8 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.35,23.81],[90.37,23.81],[90.37,23.83],[90.35,23.83],[90.35,23.81]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-34", "name": "Ward 34 (Mirpur 10)", "corporation": "DNCC", "zone": 8 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.33,23.81],[90.35,23.81],[90.35,23.83],[90.33,23.83],[90.33,23.81]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-35", "name": "Ward 35 (Mirpur 11)", "corporation": "DNCC", "zone": 8 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.35,23.79],[90.37,23.79],[90.37,23.81],[90.35,23.81],[90.35,23.79]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-36", "name": "Ward 36 (Pallabi)", "corporation": "DNCC", "zone": 9 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.33,23.79],[90.35,23.79],[90.35,23.81],[90.33,23.81],[90.33,23.79]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-37", "name": "Ward 37 (Shah Ali)", "corporation": "DNCC", "zone": 9 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.31,23.79],[90.33,23.79],[90.33,23.81],[90.31,23.81],[90.31,23.79]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-38", "name": "Ward 38 (Kafrul)", "corporation": "DNCC", "zone": 9 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.37,23.79],[90.39,23.79],[90.39,23.81],[90.37,23.81],[90.37,23.79]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-39", "name": "Ward 39 (Agargaon)", "corporation": "DNCC", "zone": 9 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.35,23.77],[90.37,23.77],[90.37,23.79],[90.35,23.79],[90.35,23.77]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-40", "name": "Ward 40 (Sher-e-Bangla Nagar)", "corporation": "DNCC", "zone": 9 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.33,23.77],[90.35,23.77],[90.35,23.79],[90.33,23.79],[90.33,23.77]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-41", "name": "Ward 41 (Mohammadpur Housing)", "corporation": "DNCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.33,23.75],[90.35,23.75],[90.35,23.77],[90.33,23.77],[90.33,23.75]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-42", "name": "Ward 42 (Mohammadpur Krishi Market)", "corporation": "DNCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.31,23.75],[90.33,23.75],[90.33,23.77],[90.31,23.77],[90.31,23.75]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-43", "name": "Ward 43 (Adabor)", "corporation": "DNCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.33,23.73],[90.35,23.73],[90.35,23.75],[90.33,23.75],[90.33,23.73]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-44", "name": "Ward 44 (Shyamoli)", "corporation": "DNCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.31,23.73],[90.33,23.73],[90.33,23.75],[90.31,23.75],[90.31,23.73]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-45", "name": "Ward 45 (Lalmatia)", "corporation": "DNCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.35,23.73],[90.37,23.73],[90.37,23.75],[90.35,23.75],[90.35,23.73]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-46", "name": "Ward 46 (Dhanmondi 32)", "corporation": "DNCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.35,23.71],[90.37,23.71],[90.37,23.73],[90.35,23.73],[90.35,23.71]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-47", "name": "Ward 47 (Dhanmondi 27)", "corporation": "DNCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.37,23.71],[90.39,23.71],[90.39,23.73],[90.37,23.73],[90.37,23.71]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-48", "name": "Ward 48 (Science Lab)", "corporation": "DNCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.37,23.69],[90.39,23.69],[90.39,23.71],[90.37,23.71],[90.37,23.69]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-49", "name": "Ward 49 (Elephant Road)", "corporation": "DNCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.39,23.69],[90.41,23.69],[90.41,23.71],[90.39,23.71],[90.39,23.69]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-50", "name": "Ward 50 (Hatirjheel)", "corporation": "DNCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.41,23.71],[90.43,23.71],[90.43,23.73],[90.41,23.73],[90.41,23.71]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-51", "name": "Ward 51 (Segunbagicha)", "corporation": "DNCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.39,23.67],[90.41,23.67],[90.41,23.69],[90.39,23.69],[90.39,23.67]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-52", "name": "Ward 52 (Shahbag)", "corporation": "DNCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.37,23.67],[90.39,23.67],[90.39,23.69],[90.37,23.69],[90.37,23.67]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-53", "name": "Ward 53 (TSC)", "corporation": "DNCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.35,23.67],[90.37,23.67],[90.37,23.69],[90.35,23.69],[90.35,23.67]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DNCC-54", "name": "Ward 54 (Curzon Hall)", "corporation": "DNCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.35,23.65],[90.37,23.65],[90.37,23.67],[90.35,23.67],[90.35,23.65]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-01", "name": "Ward 01 (Kotwali)", "corporation": "DSCC", "zone": 1 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.41,23.71],[90.43,23.71],[90.43,23.73],[90.41,23.73],[90.41,23.71]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-02", "name": "Ward 02 (Lalbagh)", "corporation": "DSCC", "zone": 1 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.39,23.71],[90.41,23.71],[90.41,23.73],[90.39,23.73],[90.39,23.71]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-03", "name": "Ward 03 (Chawkbazar)", "corporation": "DSCC", "zone": 1 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.37,23.71],[90.39,23.71],[90.39,23.73],[90.37,23.73],[90.37,23.71]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-04", "name": "Ward 04 (Hazaribagh)", "corporation": "DSCC", "zone": 1 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.35,23.71],[90.37,23.71],[90.37,23.73],[90.35,23.73],[90.35,23.71]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-05", "name": "Ward 05 (Sutrapur)", "corporation": "DSCC", "zone": 1 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.41,23.69],[90.43,23.69],[90.43,23.71],[90.41,23.71],[90.41,23.69]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-06", "name": "Ward 06 (Wari)", "corporation": "DSCC", "zone": 2 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.43,23.69],[90.45,23.69],[90.45,23.71],[90.43,23.71],[90.43,23.69]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-07", "name": "Ward 07 (Bangsal)", "corporation": "DSCC", "zone": 2 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.39,23.69],[90.41,23.69],[90.41,23.71],[90.39,23.71],[90.39,23.69]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-08", "name": "Ward 08 (Gendaria)", "corporation": "DSCC", "zone": 2 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.43,23.67],[90.45,23.67],[90.45,23.69],[90.43,23.69],[90.43,23.67]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-09", "name": "Ward 09 (Armanitola)", "corporation": "DSCC", "zone": 2 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.41,23.67],[90.43,23.67],[90.43,23.69],[90.41,23.69],[90.41,23.67]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-10", "name": "Ward 10 (Jatrabari)", "corporation": "DSCC", "zone": 2 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.45,23.67],[90.47,23.67],[90.47,23.69],[90.45,23.69],[90.45,23.67]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-11", "name": "Ward 11 (Shyampur)", "corporation": "DSCC", "zone": 3 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.47,23.67],[90.49,23.67],[90.49,23.69],[90.47,23.69],[90.47,23.67]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-12", "name": "Ward 12 (Kadamtali)", "corporation": "DSCC", "zone": 3 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.45,23.65],[90.47,23.65],[90.47,23.67],[90.45,23.67],[90.45,23.65]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-13", "name": "Ward 13 (Donia)", "corporation": "DSCC", "zone": 3 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.47,23.65],[90.49,23.65],[90.49,23.67],[90.47,23.67],[90.47,23.65]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-14", "name": "Ward 14 (Motijheel Commercial)", "corporation": "DSCC", "zone": 3 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.41,23.73],[90.43,23.73],[90.43,23.75],[90.41,23.75],[90.41,23.73]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-15", "name": "Ward 15 (Arambagh)", "corporation": "DSCC", "zone": 4 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.39,23.65],[90.41,23.65],[90.41,23.67],[90.39,23.67],[90.39,23.65]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-16", "name": "Ward 16 (Paltan)", "corporation": "DSCC", "zone": 4 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.41,23.65],[90.43,23.65],[90.43,23.67],[90.41,23.67],[90.41,23.65]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-17", "name": "Ward 17 (Purana Paltan)", "corporation": "DSCC", "zone": 4 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.43,23.65],[90.45,23.65],[90.45,23.67],[90.43,23.67],[90.43,23.65]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-18", "name": "Ward 18 (Malibagh Railgate)", "corporation": "DSCC", "zone": 4 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.43,23.73],[90.45,23.73],[90.45,23.75],[90.43,23.75],[90.43,23.73]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-19", "name": "Ward 19 (Shantinagar)", "corporation": "DSCC", "zone": 5 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.41,23.63],[90.43,23.63],[90.43,23.65],[90.41,23.65],[90.41,23.63]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-20", "name": "Ward 20 (Fakirapul)", "corporation": "DSCC", "zone": 5 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.39,23.63],[90.41,23.63],[90.41,23.65],[90.39,23.65],[90.39,23.63]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-21", "name": "Ward 21 (Green Road)", "corporation": "DSCC", "zone": 5 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.37,23.63],[90.39,23.63],[90.39,23.65],[90.37,23.65],[90.37,23.63]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-22", "name": "Ward 22 (Dhanmondi Lake)", "corporation": "DSCC", "zone": 5 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.35,23.63],[90.37,23.63],[90.37,23.65],[90.35,23.65],[90.35,23.63]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-23", "name": "Ward 23 (New Market)", "corporation": "DSCC", "zone": 6 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.37,23.65],[90.39,23.65],[90.39,23.67],[90.37,23.67],[90.37,23.65]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-24", "name": "Ward 24 (Azimpur)", "corporation": "DSCC", "zone": 6 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.35,23.65],[90.37,23.65],[90.37,23.67],[90.35,23.67],[90.35,23.65]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-25", "name": "Ward 25 (Nilkhet)", "corporation": "DSCC", "zone": 6 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.37,23.61],[90.39,23.61],[90.39,23.63],[90.37,23.63],[90.37,23.61]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-26", "name": "Ward 26 (Bakshi Bazar)", "corporation": "DSCC", "zone": 6 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.35,23.61],[90.37,23.61],[90.37,23.63],[90.35,23.63],[90.35,23.61]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-27", "name": "Ward 27 (Paribagh)", "corporation": "DSCC", "zone": 7 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.43,23.63],[90.45,23.63],[90.45,23.65],[90.43,23.65],[90.43,23.63]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-28", "name": "Ward 28 (Mugdapara)", "corporation": "DSCC", "zone": 7 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.45,23.63],[90.47,23.63],[90.47,23.65],[90.45,23.65],[90.45,23.63]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-29", "name": "Ward 29 (Basabo)", "corporation": "DSCC", "zone": 7 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.47,23.63],[90.49,23.63],[90.49,23.65],[90.47,23.65],[90.47,23.63]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-30", "name": "Ward 30 (Gopibagh)", "corporation": "DSCC", "zone": 7 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.43,23.61],[90.45,23.61],[90.45,23.63],[90.43,23.63],[90.43,23.61]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-31", "name": "Ward 31 (Khilgaon Chowdhury Para)", "corporation": "DSCC", "zone": 8 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.45,23.61],[90.47,23.61],[90.47,23.63],[90.45,23.63],[90.45,23.61]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-32", "name": "Ward 32 (Sabujbagh Railgate)", "corporation": "DSCC", "zone": 8 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.47,23.61],[90.49,23.61],[90.49,23.63],[90.47,23.63],[90.47,23.61]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-33", "name": "Ward 33 (Meradia)", "corporation": "DSCC", "zone": 8 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.43,23.59],[90.45,23.59],[90.45,23.61],[90.43,23.61],[90.43,23.59]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-34", "name": "Ward 34 (Rayerbagh)", "corporation": "DSCC", "zone": 8 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.33,23.69],[90.35,23.69],[90.35,23.71],[90.33,23.71],[90.33,23.69]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-35", "name": "Ward 35 (Dhanmondi Road 2)", "corporation": "DSCC", "zone": 8 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.35,23.69],[90.37,23.69],[90.37,23.71],[90.35,23.71],[90.35,23.69]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-36", "name": "Ward 36 (Dhanmondi Road 8)", "corporation": "DSCC", "zone": 9 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.33,23.67],[90.35,23.67],[90.35,23.69],[90.33,23.69],[90.33,23.67]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-37", "name": "Ward 37 (Dhanmondi Road 15)", "corporation": "DSCC", "zone": 9 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.33,23.65],[90.35,23.65],[90.35,23.67],[90.33,23.67],[90.33,23.65]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-38", "name": "Ward 38 (Kalabagan)", "corporation": "DSCC", "zone": 9 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.35,23.67],[90.37,23.67],[90.37,23.69],[90.35,23.69],[90.35,23.67]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-39", "name": "Ward 39 (Jigatola)", "corporation": "DSCC", "zone": 9 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.31,23.67],[90.33,23.67],[90.33,23.69],[90.31,23.69],[90.31,23.67]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-40", "name": "Ward 40 (Kathalbagan)", "corporation": "DSCC", "zone": 9 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.33,23.63],[90.35,23.63],[90.35,23.65],[90.33,23.65],[90.33,23.63]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-41", "name": "Ward 41 (West Dhanmondi)", "corporation": "DSCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.31,23.65],[90.33,23.65],[90.33,23.67],[90.31,23.67],[90.31,23.65]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-42", "name": "Ward 42 (Hazaribagh Tannery)", "corporation": "DSCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.31,23.63],[90.33,23.63],[90.33,23.65],[90.31,23.65],[90.31,23.63]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-43", "name": "Ward 43 (Tolarbagh)", "corporation": "DSCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.29,23.63],[90.31,23.63],[90.31,23.65],[90.29,23.65],[90.29,23.63]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-44", "name": "Ward 44 (Kamrangirchar)", "corporation": "DSCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.29,23.61],[90.31,23.61],[90.31,23.63],[90.29,23.63],[90.29,23.61]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-45", "name": "Ward 45 (Rayer Bazar)", "corporation": "DSCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.31,23.61],[90.33,23.61],[90.33,23.63],[90.31,23.63],[90.31,23.61]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-46", "name": "Ward 46 (Mohammadpur Geneva Camp)", "corporation": "DSCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.33,23.61],[90.35,23.61],[90.35,23.63],[90.33,23.63],[90.33,23.61]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-47", "name": "Ward 47 (Mohammadpur Physical Training)", "corporation": "DSCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.29,23.69],[90.31,23.69],[90.31,23.71],[90.29,23.71],[90.29,23.69]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-48", "name": "Ward 48 (Tejkunipara)", "corporation": "DSCC", "zone": 1 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.31,23.69],[90.33,23.69],[90.33,23.71],[90.31,23.71],[90.31,23.69]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-49", "name": "Ward 49 (Lalmatia D Block)", "corporation": "DSCC", "zone": 1 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.33,23.69],[90.35,23.69],[90.35,23.71],[90.33,23.71],[90.33,23.69]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-50", "name": "Ward 50 (Eskaton)", "corporation": "DSCC", "zone": 2 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.39,23.61],[90.41,23.61],[90.41,23.63],[90.39,23.63],[90.39,23.61]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-51", "name": "Ward 51 (Mogbazar Railgate)", "corporation": "DSCC", "zone": 2 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.41,23.61],[90.43,23.61],[90.43,23.63],[90.41,23.63],[90.41,23.61]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-52", "name": "Ward 52 (Ramna Park)", "corporation": "DSCC", "zone": 3 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.37,23.59],[90.39,23.59],[90.39,23.61],[90.37,23.61],[90.37,23.59]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-53", "name": "Ward 53 (High Court)", "corporation": "DSCC", "zone": 3 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.39,23.59],[90.41,23.59],[90.41,23.61],[90.39,23.61],[90.39,23.59]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-54", "name": "Ward 54 (Purana Paltan East)", "corporation": "DSCC", "zone": 3 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.41,23.59],[90.43,23.59],[90.43,23.61],[90.41,23.61],[90.41,23.59]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-55", "name": "Ward 55 (Tikatuli)", "corporation": "DSCC", "zone": 4 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.45,23.59],[90.47,23.59],[90.47,23.61],[90.45,23.61],[90.45,23.59]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-56", "name": "Ward 56 (Golapbagh)", "corporation": "DSCC", "zone": 4 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.47,23.59],[90.49,23.59],[90.49,23.61],[90.47,23.61],[90.47,23.59]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-57", "name": "Ward 57 (Dayaganj)", "corporation": "DSCC", "zone": 4 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.43,23.57],[90.45,23.57],[90.45,23.59],[90.43,23.59],[90.43,23.57]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-58", "name": "Ward 58 (Postogola)", "corporation": "DSCC", "zone": 5 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.45,23.57],[90.47,23.57],[90.47,23.59],[90.45,23.59],[90.45,23.57]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-59", "name": "Ward 59 (Keraniganj)", "corporation": "DSCC", "zone": 5 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.29,23.59],[90.31,23.59],[90.31,23.61],[90.29,23.61],[90.29,23.59]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-60", "name": "Ward 60 (South Keraniganj)", "corporation": "DSCC", "zone": 5 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.29,23.57],[90.31,23.57],[90.31,23.59],[90.29,23.59],[90.29,23.57]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-61", "name": "Ward 61 (Zinzira)", "corporation": "DSCC", "zone": 6 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.31,23.57],[90.33,23.57],[90.33,23.59],[90.31,23.59],[90.31,23.57]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-62", "name": "Ward 62 (Shyampur East)", "corporation": "DSCC", "zone": 6 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.47,23.57],[90.49,23.57],[90.49,23.59],[90.47,23.59],[90.47,23.57]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-63", "name": "Ward 63 (Kadamtali East)", "corporation": "DSCC", "zone": 7 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.43,23.55],[90.45,23.55],[90.45,23.57],[90.43,23.57],[90.43,23.55]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-64", "name": "Ward 64 (Wari South)", "corporation": "DSCC", "zone": 7 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.41,23.55],[90.43,23.55],[90.43,23.57],[90.41,23.57],[90.41,23.55]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-65", "name": "Ward 65 (Islambagh)", "corporation": "DSCC", "zone": 8 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.39,23.55],[90.41,23.55],[90.41,23.57],[90.39,23.57],[90.39,23.55]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-66", "name": "Ward 66 (Kamlapur)", "corporation": "DSCC", "zone": 8 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.43,23.53],[90.45,23.53],[90.45,23.55],[90.43,23.55],[90.43,23.53]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-67", "name": "Ward 67 (Malibagh Moor)", "corporation": "DSCC", "zone": 8 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.45,23.53],[90.47,23.53],[90.47,23.55],[90.45,23.55],[90.45,23.53]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-68", "name": "Ward 68 (Sayedabad)", "corporation": "DSCC", "zone": 9 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.47,23.53],[90.49,23.53],[90.49,23.55],[90.47,23.55],[90.47,23.53]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-69", "name": "Ward 69 (Jurain)", "corporation": "DSCC", "zone": 9 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.41,23.53],[90.43,23.53],[90.43,23.55],[90.41,23.55],[90.41,23.53]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-70", "name": "Ward 70 (Shahjahanpur)", "corporation": "DSCC", "zone": 9 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.39,23.53],[90.41,23.53],[90.41,23.55],[90.39,23.55],[90.39,23.53]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-71", "name": "Ward 71 (Nimtoli)", "corporation": "DSCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.37,23.55],[90.39,23.55],[90.39,23.57],[90.37,23.57],[90.37,23.55]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-72", "name": "Ward 72 (Johnson Road)", "corporation": "DSCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.37,23.53],[90.39,23.53],[90.39,23.55],[90.37,23.55],[90.37,23.53]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-73", "name": "Ward 73 (Sadarghat)", "corporation": "DSCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.35,23.53],[90.37,23.53],[90.37,23.55],[90.35,23.55],[90.35,23.53]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-74", "name": "Ward 74 (Mitford)", "corporation": "DSCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.35,23.51],[90.37,23.51],[90.37,23.53],[90.35,23.53],[90.35,23.51]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "wardCode": "DSCC-75", "name": "Ward 75 (Old Dhaka)", "corporation": "DSCC", "zone": 10 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[90.37,23.51],[90.39,23.51],[90.39,23.53],[90.37,23.53],[90.37,23.51]]]
       }
     }
   ]

@@ -52,9 +52,9 @@ export const analyticsSeries = (days = 30) =>
 
 export const wardStats = () =>
   fetch(`${API}/api/wards/stats`).then(r => r.json());
- 
+
 export const getOrgs = () =>
   fetch(`${API}/api/orgs`).then(r => r.json());
 
 export const getOrgMetrics = (code) =>
-  fetch(`${API}/api/org/${encodeURIComponent(code)}/metrics`).then(r => r.json());
+  fetch(`${API}/api/orgs/${encodeURIComponent(code)}/metrics`).then(r => r.json());
